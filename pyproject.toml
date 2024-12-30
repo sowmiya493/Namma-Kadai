@@ -8,10 +8,14 @@ description = "Library Management System"
 =======
 name = "sales"
 authors = [
-    { name = "sowmi\", email = "sowmi@in"}
+    { name = "sowmi", email = "sowmi@gmail.com"}
 ]
+<<<<<<< HEAD
 description = "sales app"
 >>>>>>> c68b8ce (feat: Initialize App)
+=======
+description = "sales"
+>>>>>>> ffd747a (feat: Initialize App)
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

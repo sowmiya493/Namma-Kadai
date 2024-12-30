@@ -35,7 +35,7 @@ mit
 =======
 ## Sales
 
-sales app
+sales
 
 #### License
 
