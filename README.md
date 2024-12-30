@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Library Management
 
 Library Management System
@@ -31,3 +32,12 @@ Pre-commit is configured to use the following tools for checking and formatting 
 ### License
 
 mit
+=======
+## Sales
+
+sales app
+
+#### License
+
+mit
+>>>>>>> c68b8ce (feat: Initialize App)

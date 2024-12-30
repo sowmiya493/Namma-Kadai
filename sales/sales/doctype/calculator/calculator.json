@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-12-31 12:06:08.865414",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "calculation_section",
+  "field_a",
+  "field_b",
+  "addition",
+  "subtraction",
+  "multiplication",
+  "division",
+  "formula",
+  "answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Calculation"
+  },
+  {
+   "fieldname": "field_a",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field A",
+   "reqd": 1
+  },
+  {
+   "fieldname": "field_b",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field B",
+   "reqd": 1
+  },
+  {
+   "fieldname": "addition",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Addition"
+  },
+  {
+   "fieldname": "subtraction",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Subtraction"
+  },
+  {
+   "fieldname": "multiplication",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Multiplication"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Division"
+  },
+  {
+   "fieldname": "formula",
+   "fieldtype": "Link",
+   "label": "Formula",
+   "options": "calculations"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Data",
+   "label": "Answer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-02 15:57:46.944865",
+ "modified_by": "Administrator",
+ "module": "Sales",
+ "name": "calculator",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

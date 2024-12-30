@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -53,3 +54,12 @@ jspm_packages/
 
 # Aider AI Chat
 .aider*
+=======
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+node_modules
+__pycache__
+>>>>>>> c68b8ce (feat: Initialize App)
