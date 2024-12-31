@@ -141,8 +141,8 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
+# 	"Company": {
+# 		"validate": "library_management.library_management.doctype.company.company.update_cashbalance",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
