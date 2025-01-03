@@ -1,0 +1,15 @@
+2024-12-27 10:03:49,866 ERROR frappe New Exception collected in error log
+Site: library.test
+Form Dict: {'txt': '', 'doctype': 'Item', 'ignore_user_permissions': '0', 'reference_doctype': 'Purchase Item', 'page_length': '10', 'filters': '{"company":"Istore"}', 'cmd': 'frappe.desk.search.search_link'}
+2024-12-27 10:04:30,978 ERROR frappe New Exception collected in error log
+Site: library.test
+Form Dict: {'txt': '', 'doctype': 'Item', 'ignore_user_permissions': '0', 'reference_doctype': 'Purchase Item', 'page_length': '10', 'filters': '{"company":"Istore"}', 'cmd': 'frappe.desk.search.search_link'}
+2024-12-27 11:46:55,185 ERROR frappe New Exception collected in error log
+Site: library.test
+Form Dict: {'txt': '', 'doctype': 'Item', 'ignore_user_permissions': '0', 'reference_doctype': 'Sales Item', 'page_length': '10', 'filters': '{"company":"Aerele"}', 'cmd': 'frappe.desk.search.search_link'}
+2024-12-27 11:47:24,035 ERROR frappe New Exception collected in error log
+Site: library.test
+Form Dict: {'txt': '', 'doctype': 'Item', 'ignore_user_permissions': '0', 'reference_doctype': 'Sales Item', 'page_length': '10', 'filters': '{"company":"Aerele"}', 'cmd': 'frappe.desk.search.search_link'}
+2024-12-27 11:47:29,879 ERROR frappe New Exception collected in error log
+Site: library.test
+Form Dict: {'txt': '', 'doctype': 'Item', 'ignore_user_permissions': '0', 'reference_doctype': 'Sales Item', 'page_length': '10', 'filters': '{"company":"Aerele"}', 'cmd': 'frappe.desk.search.search_link'}

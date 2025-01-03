@@ -1,0 +1,457 @@
+2024-12-13 15:29:09,755 DEBUG cd bench-15 && python3 -m venv env
+2024-12-13 15:29:11,707 DEBUG cd bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-13 15:29:12,843 DEBUG cd bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet wheel
+2024-12-13 15:29:13,510 LOG Getting frappe
+2024-12-13 15:29:13,510 DEBUG cd bench-15/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-12-13 15:29:21,814 LOG Installing frappe
+2024-12-13 15:29:21,814 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/frappe 
+2024-12-13 15:29:47,216 DEBUG cd /home/sowmiya/bench-15/apps/frappe && yarn install --check-files
+2024-12-13 15:29:51,998 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-13 15:29:54,338 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-13 15:29:54,338 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-13 15:29:54,338 DEBUG cd bench-15 && bench build
+2024-12-13 15:29:54,411 INFO /usr/local/bin/bench build
+2024-12-13 15:30:18,787 LOG setting up backups
+2024-12-13 15:30:18,797 LOG backups were set up
+2024-12-13 15:30:18,797 INFO Bench bench-15 initialized
+2024-12-13 15:30:38,242 INFO /usr/local/bin/bench new-site test1
+2024-12-13 15:30:48,378 INFO /usr/local/bin/bench new-site test1
+2024-12-13 15:31:23,946 INFO /usr/local/bin/bench new-site test1
+2024-12-13 16:00:06,771 INFO /usr/local/bin/bench new-site site.test
+2024-12-13 16:02:09,955 INFO /usr/local/bin/bench find .
+2024-12-13 16:03:26,186 INFO /usr/local/bin/bench new-site inventory.test
+2024-12-13 16:03:49,986 INFO /usr/local/bin/bench new-site site.test
+2024-12-13 16:04:06,157 INFO /usr/local/bin/bench new-site inventory.test
+2024-12-13 16:05:02,898 INFO /usr/local/bin/bench use inventory.test
+2024-12-13 16:05:37,718 INFO /usr/local/bin/bench get-app erpnext
+2024-12-13 16:05:38,329 LOG Getting erpnext
+2024-12-13 16:05:38,329 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-12-13 16:05:46,621 LOG Installing erpnext
+2024-12-13 16:05:46,621 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/erpnext 
+2024-12-13 16:05:50,474 DEBUG cd /home/sowmiya/bench-15/apps/erpnext && yarn install --check-files
+2024-12-13 16:05:50,791 DEBUG bench build --app erpnext
+2024-12-13 16:05:50,862 INFO /usr/local/bin/bench build --app erpnext
+2024-12-13 16:05:54,435 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-13 16:05:56,748 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-13 16:05:56,748 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-13 16:06:48,256 INFO /usr/local/bin/bench --site inventory.test instalkl-app eropnext
+2024-12-13 16:06:54,902 INFO /usr/local/bin/bench --site inventory.test install-app eropnext
+2024-12-13 16:07:00,095 INFO /usr/local/bin/bench --site inventory.test install-app erpnext
+2024-12-13 16:07:47,919 INFO /usr/local/bin/bench start
+2024-12-13 16:07:48,077 INFO /usr/local/bin/bench watch
+2024-12-13 16:07:48,089 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:07:48,113 INFO /usr/local/bin/bench schedule
+2024-12-13 16:07:48,120 INFO /usr/local/bin/bench worker
+2024-12-13 16:07:50,883 INFO /usr/local/bin/bench --site inventory.test install-app erpnext
+2024-12-13 16:08:06,595 INFO /usr/local/bin/bench setup requierments
+2024-12-13 16:08:06,599 WARNING /usr/local/bin/bench setup requierments executed with exit code 2
+2024-12-13 16:08:19,530 INFO /usr/local/bin/bench setup requierrments
+2024-12-13 16:08:19,534 WARNING /usr/local/bin/bench setup requierrments executed with exit code 2
+2024-12-13 16:08:23,465 INFO /usr/local/bin/bench setup requierements
+2024-12-13 16:08:23,469 WARNING /usr/local/bin/bench setup requierements executed with exit code 2
+2024-12-13 16:08:29,591 INFO /usr/local/bin/bench setup requirements
+2024-12-13 16:08:29,595 DEBUG /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-13 16:08:30,259 LOG Installing frappe
+2024-12-13 16:08:30,260 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/frappe 
+2024-12-13 16:08:32,149 DEBUG cd /home/sowmiya/bench-15/apps/frappe && yarn install --check-files
+2024-12-13 16:08:33,506 LOG Installing erpnext
+2024-12-13 16:08:33,506 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/erpnext 
+2024-12-13 16:08:35,034 DEBUG cd /home/sowmiya/bench-15/apps/erpnext && yarn install --check-files
+2024-12-13 16:15:47,711 INFO /usr/local/bin/bench drop-site inventory.test
+2024-12-13 16:15:56,528 INFO /usr/local/bin/bench drop-site inventory.test
+2024-12-13 16:18:11,844 INFO /usr/local/bin/bench new-app library_management
+2024-12-13 16:18:11,847 LOG creating new app library_management
+2024-12-13 16:19:48,442 WARNING /usr/local/bin/bench new-app library_management executed with exit code 1
+2024-12-13 16:20:10,788 INFO /usr/local/bin/bench new-app inventorymanagement
+2024-12-13 16:20:10,791 LOG creating new app inventorymanagement
+2024-12-13 16:20:59,831 WARNING /usr/local/bin/bench new-app inventorymanagement executed with exit code 1
+2024-12-13 16:21:07,572 INFO /usr/local/bin/bench find .
+2024-12-13 16:21:30,086 INFO /usr/local/bin/bench new-app library_management
+2024-12-13 16:21:30,089 LOG creating new app library_management
+2024-12-13 16:22:30,136 LOG Installing library_management
+2024-12-13 16:22:30,137 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/library_management 
+2024-12-13 16:22:31,433 DEBUG bench build --app library_management
+2024-12-13 16:22:31,507 INFO /usr/local/bin/bench build --app library_management
+2024-12-13 16:22:39,528 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-13 16:22:41,844 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-13 16:22:41,845 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-13 16:23:01,353 INFO /usr/local/bin/bench start
+2024-12-13 16:23:01,503 INFO /usr/local/bin/bench worker
+2024-12-13 16:23:01,519 INFO /usr/local/bin/bench schedule
+2024-12-13 16:23:01,540 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:23:01,543 INFO /usr/local/bin/bench watch
+2024-12-13 16:23:30,487 INFO /usr/local/bin/bench new-site library.test
+2024-12-13 16:24:29,426 INFO /usr/local/bin/bench --site library.test add-to-hosts
+2024-12-13 16:26:20,074 INFO /usr/local/bin/bench --site library.test install-app library_management
+2024-12-13 16:27:49,920 INFO /usr/local/bin/bench start
+2024-12-13 16:27:50,057 INFO /usr/local/bin/bench schedule
+2024-12-13 16:27:50,101 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:27:50,102 INFO /usr/local/bin/bench watch
+2024-12-13 16:27:50,107 INFO /usr/local/bin/bench worker
+2024-12-13 16:29:46,752 INFO /usr/local/bin/bench --site library.test enable-schedular
+2024-12-13 16:31:08,688 INFO /usr/local/bin/bench start
+2024-12-13 16:31:08,830 INFO /usr/local/bin/bench watch
+2024-12-13 16:31:08,836 INFO /usr/local/bin/bench worker
+2024-12-13 16:31:08,862 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:31:08,871 INFO /usr/local/bin/bench schedule
+2024-12-13 16:31:33,953 INFO /usr/local/bin/bench use library.test
+2024-12-13 16:42:55,345 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-13 16:43:01,802 INFO /usr/local/bin/bench build
+2024-12-13 16:48:05,933 INFO /usr/local/bin/bench version
+2024-12-13 16:49:37,133 INFO /usr/local/bin/bench start
+2024-12-13 16:49:37,289 INFO /usr/local/bin/bench worker
+2024-12-13 16:49:37,295 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:49:37,302 INFO /usr/local/bin/bench watch
+2024-12-13 16:49:37,325 INFO /usr/local/bin/bench schedule
+2024-12-13 16:49:44,219 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-13 16:49:45,803 INFO /usr/local/bin/bench build
+2024-12-13 16:49:48,835 INFO /usr/local/bin/bench start
+2024-12-13 16:49:49,010 INFO /usr/local/bin/bench schedule
+2024-12-13 16:49:49,037 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:49:49,037 INFO /usr/local/bin/bench worker
+2024-12-13 16:49:49,038 INFO /usr/local/bin/bench watch
+2024-12-13 16:49:49,867 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-13 16:50:03,952 INFO /usr/local/bin/bench start
+2024-12-13 16:50:04,144 INFO /usr/local/bin/bench watch
+2024-12-13 16:50:04,159 INFO /usr/local/bin/bench schedule
+2024-12-13 16:50:04,167 INFO /usr/local/bin/bench worker
+2024-12-13 16:50:04,172 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:50:11,004 INFO /usr/local/bin/bench start
+2024-12-13 16:50:11,142 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:50:11,186 INFO /usr/local/bin/bench watch
+2024-12-13 16:50:11,186 INFO /usr/local/bin/bench schedule
+2024-12-13 16:50:11,190 INFO /usr/local/bin/bench worker
+2024-12-13 16:51:09,695 INFO /usr/local/bin/bench get-app frappe
+2024-12-13 16:51:10,259 LOG Getting frappe
+2024-12-13 16:51:10,259 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-12-13 16:51:12,956 WARNING /usr/local/bin/bench get-app frappe executed with exit code 1
+2024-12-13 16:51:26,607 INFO /usr/local/bin/bench get-app frappe --branch version-15
+2024-12-13 16:51:26,796 LOG Getting frappe
+2024-12-13 16:51:26,796 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-13 16:51:31,609 LOG Installing frappe
+2024-12-13 16:51:31,609 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/frappe 
+2024-12-13 16:51:35,658 DEBUG cd /home/sowmiya/bench-15/apps/frappe && yarn install --check-files
+2024-12-13 16:51:39,954 DEBUG bench build --app frappe
+2024-12-13 16:51:40,027 INFO /usr/local/bin/bench build --app frappe
+2024-12-13 16:52:08,554 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-13 16:52:10,873 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-13 16:52:10,874 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-13 16:53:10,198 INFO /usr/local/bin/bench restart
+2024-12-13 16:53:10,427 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-13 16:53:12,744 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-13 16:53:12,744 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-13 16:53:21,645 INFO /usr/local/bin/bench get-app frappe --branch version-15
+2024-12-13 16:53:22,577 WARNING /usr/local/bin/bench get-app frappe --branch version-15 executed with exit code 1
+2024-12-13 16:55:48,303 INFO /usr/local/bin/bench start
+2024-12-13 16:55:48,443 INFO /usr/local/bin/bench schedule
+2024-12-13 16:55:48,451 INFO /usr/local/bin/bench worker
+2024-12-13 16:55:48,483 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:55:48,486 INFO /usr/local/bin/bench watch
+2024-12-13 16:57:52,868 INFO /usr/local/bin/bench start
+2024-12-13 16:57:53,009 INFO /usr/local/bin/bench watch
+2024-12-13 16:57:53,012 INFO /usr/local/bin/bench schedule
+2024-12-13 16:57:53,045 INFO /usr/local/bin/bench worker
+2024-12-13 16:57:53,053 INFO /usr/local/bin/bench serve --port 8005
+2024-12-13 16:58:33,550 INFO /usr/local/bin/bench version
+2024-12-13 16:58:59,284 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-13 17:01:13,638 INFO /usr/local/bin/bench setup requirements
+2024-12-13 17:01:13,650 DEBUG /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-13 17:01:14,369 LOG Installing frappe
+2024-12-13 17:01:14,369 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/frappe 
+2024-12-13 17:01:16,067 DEBUG cd /home/sowmiya/bench-15/apps/frappe && yarn install --check-files
+2024-12-13 17:01:17,146 LOG Installing library_management
+2024-12-13 17:01:17,146 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/library_management 
+2024-12-13 17:03:46,634 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-14 10:09:24,602 INFO /usr/local/bin/bench start
+2024-12-14 10:09:24,738 INFO /usr/local/bin/bench schedule
+2024-12-14 10:09:24,738 INFO /usr/local/bin/bench worker
+2024-12-14 10:09:24,772 INFO /usr/local/bin/bench watch
+2024-12-14 10:09:24,779 INFO /usr/local/bin/bench serve --port 8005
+2024-12-14 10:15:58,321 INFO /usr/local/bin/bench --site site.test console
+2024-12-14 10:17:02,264 INFO /usr/local/bin/bench --site site.test console
+2024-12-14 10:18:01,591 INFO /usr/local/bin/bench --site site.test mariadb
+2024-12-14 10:19:42,700 INFO /usr/local/bin/bench --site site.test backup
+2024-12-14 10:21:01,562 INFO /usr/local/bin/bench set-config -g developer_mode true
+2024-12-14 10:57:32,228 INFO /usr/local/bin/bench start
+2024-12-14 10:57:32,383 INFO /usr/local/bin/bench schedule
+2024-12-14 10:57:32,388 INFO /usr/local/bin/bench watch
+2024-12-14 10:57:32,391 INFO /usr/local/bin/bench serve --port 8005
+2024-12-14 10:57:32,399 INFO /usr/local/bin/bench worker
+2024-12-16 10:11:32,760 INFO /usr/local/bin/bench start
+2024-12-16 10:11:32,914 INFO /usr/local/bin/bench watch
+2024-12-16 10:11:32,929 INFO /usr/local/bin/bench worker
+2024-12-16 10:11:32,935 INFO /usr/local/bin/bench schedule
+2024-12-16 10:11:32,939 INFO /usr/local/bin/bench serve --port 8005
+2024-12-16 10:20:17,208 INFO /usr/local/bin/bench --site site15 migrate
+2024-12-16 10:20:30,468 INFO /usr/local/bin/bench --site site.test migrate
+2024-12-16 10:22:14,790 INFO /usr/local/bin/bench --site site.test mysql
+2024-12-16 10:22:49,226 INFO /usr/local/bin/bench --site site.test mysql
+2024-12-16 10:24:55,292 INFO /usr/local/bin/bench mariadb
+2024-12-16 11:00:04,640 INFO /usr/local/bin/bench set-config -g server_script_enabled 1
+2024-12-16 11:03:15,383 INFO /usr/local/bin/bench console
+2024-12-16 11:15:38,924 INFO /usr/local/bin/bench --site site.test install-app InventoryManagementSystem
+2024-12-16 11:15:51,061 INFO /usr/local/bin/bench --site site.test install-app library
+2024-12-16 11:15:54,913 INFO /usr/local/bin/bench --site site.test install-app InventoryManagementSystem
+2024-12-16 11:16:14,359 INFO /usr/local/bin/bench --site site.test console
+2024-12-16 11:16:27,885 INFO /usr/local/bin/bench --site site.test install-app frappe
+2024-12-16 11:16:34,499 INFO /usr/local/bin/bench --site site.test install-app frappe-bench
+2024-12-16 11:18:11,167 INFO /usr/local/bin/bench --site site.test list-apps
+2024-12-16 11:18:34,821 INFO /usr/local/bin/bench --site site.test install-app Nammakadai
+2024-12-16 11:26:50,335 INFO /usr/local/bin/bench --site site.test clear-cache
+2024-12-16 11:26:50,870 INFO /usr/local/bin/bench --site site.test migrate
+2024-12-16 12:00:01,625 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-16 16:35:53,459 INFO /usr/local/bin/bench --site site.test mariadb
+2024-12-16 16:37:07,175 INFO /usr/local/bin/bench --site site.test mariadb
+2024-12-16 16:38:49,179 INFO /usr/local/bin/bench --site site.test mariadb
+2024-12-16 16:50:57,525 INFO /usr/local/bin/bench --site site.test mysql
+2024-12-16 16:51:02,514 INFO /usr/local/bin/bench --site site.test mariadb
+2024-12-16 17:01:52,096 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-17 10:19:33,603 INFO /usr/local/bin/bench start
+2024-12-17 10:19:33,754 INFO /usr/local/bin/bench serve --port 8005
+2024-12-17 10:19:33,756 INFO /usr/local/bin/bench watch
+2024-12-17 10:19:33,796 INFO /usr/local/bin/bench schedule
+2024-12-17 10:19:33,803 INFO /usr/local/bin/bench worker
+2024-12-17 10:46:17,219 INFO /usr/local/bin/bench start
+2024-12-17 10:46:47,032 INFO /usr/local/bin/bench start
+2024-12-17 10:57:11,768 INFO /usr/local/bin/bench start
+2024-12-17 10:58:17,479 INFO /usr/local/bin/bench start
+2024-12-17 10:58:25,808 INFO /usr/local/bin/bench start
+2024-12-17 10:58:48,930 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-17 11:00:00,934 INFO /usr/local/bin/bench start
+2024-12-17 11:01:32,297 INFO /usr/local/bin/bench --site library.test set maintenance-mode off
+2024-12-17 11:01:47,691 INFO /usr/local/bin/bench --site library.test set-maintenance-mode off
+2024-12-17 11:01:52,483 INFO /usr/local/bin/bench start
+2024-12-17 11:02:35,732 INFO /usr/local/bin/bench start
+2024-12-17 11:03:05,487 INFO /usr/local/bin/bench stop
+2024-12-17 11:03:13,301 INFO /usr/local/bin/bench restart
+2024-12-17 11:03:16,280 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-17 11:03:18,615 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-17 11:03:18,623 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-17 11:03:23,681 INFO /usr/local/bin/bench start
+2024-12-17 11:06:28,368 INFO /usr/local/bin/bench start
+2024-12-17 11:06:36,690 INFO /usr/local/bin/bench start
+2024-12-17 11:07:18,502 INFO /usr/local/bin/bench start
+2024-12-17 11:08:42,151 INFO /usr/local/bin/bench start
+2024-12-17 11:08:42,290 INFO /usr/local/bin/bench serve --port 8005
+2024-12-17 11:08:42,294 INFO /usr/local/bin/bench worker
+2024-12-17 11:08:42,325 INFO /usr/local/bin/bench watch
+2024-12-17 11:08:42,332 INFO /usr/local/bin/bench schedule
+2024-12-17 11:27:39,467 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-17 11:27:55,765 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-17 12:00:01,965 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-17 15:15:50,343 INFO /usr/local/bin/bench start
+2024-12-17 15:15:50,508 INFO /usr/local/bin/bench serve --port 8005
+2024-12-17 15:15:50,512 INFO /usr/local/bin/bench worker
+2024-12-17 15:15:50,550 INFO /usr/local/bin/bench watch
+2024-12-17 15:15:50,554 INFO /usr/local/bin/bench schedule
+2024-12-17 15:20:12,158 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-18 10:21:47,758 INFO /usr/local/bin/bench start
+2024-12-18 10:21:47,900 INFO /usr/local/bin/bench worker
+2024-12-18 10:21:47,906 INFO /usr/local/bin/bench watch
+2024-12-18 10:21:47,932 INFO /usr/local/bin/bench schedule
+2024-12-18 10:21:47,936 INFO /usr/local/bin/bench serve --port 8005
+2024-12-18 10:38:04,586 INFO /usr/local/bin/bench migrate
+2024-12-18 10:56:50,283 INFO /usr/local/bin/bench upgrade
+2024-12-18 10:56:50,475 INFO /usr/local/bin/bench migrate
+2024-12-18 11:05:14,231 INFO /usr/local/bin/bench upgrade
+2024-12-18 11:05:14,416 INFO /usr/local/bin/bench migrate
+2024-12-18 12:00:01,228 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-18 12:15:46,431 INFO /usr/local/bin/bench migrate
+2024-12-18 12:17:00,212 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-18 12:17:08,335 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-18 13:19:50,633 INFO /usr/local/bin/bench migrate
+2024-12-18 13:46:23,352 INFO /usr/local/bin/bench migrate
+2024-12-18 13:58:21,619 INFO /usr/local/bin/bench migrate
+2024-12-18 15:17:32,267 INFO /usr/local/bin/bench start
+2024-12-18 15:17:32,444 INFO /usr/local/bin/bench worker
+2024-12-18 15:17:32,475 INFO /usr/local/bin/bench serve --port 8005
+2024-12-18 15:17:32,486 INFO /usr/local/bin/bench watch
+2024-12-18 15:17:32,488 INFO /usr/local/bin/bench schedule
+2024-12-18 16:14:42,045 INFO /usr/local/bin/bench migrate
+2024-12-19 10:18:10,714 INFO /usr/local/bin/bench start
+2024-12-19 10:18:10,878 INFO /usr/local/bin/bench serve --port 8005
+2024-12-19 10:18:10,883 INFO /usr/local/bin/bench worker
+2024-12-19 10:18:10,925 INFO /usr/local/bin/bench watch
+2024-12-19 10:18:10,929 INFO /usr/local/bin/bench schedule
+2024-12-19 11:02:06,356 INFO /usr/local/bin/bench migrate
+2024-12-19 12:00:02,147 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-23 10:43:28,241 INFO /usr/local/bin/bench start
+2024-12-23 10:43:28,406 INFO /usr/local/bin/bench serve --port 8005
+2024-12-23 10:43:28,408 INFO /usr/local/bin/bench schedule
+2024-12-23 10:43:28,428 INFO /usr/local/bin/bench watch
+2024-12-23 10:43:28,431 INFO /usr/local/bin/bench worker
+2024-12-23 12:00:01,543 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-24 10:14:27,719 INFO /usr/local/bin/bench start
+2024-12-24 10:14:27,878 INFO /usr/local/bin/bench watch
+2024-12-24 10:14:27,900 INFO /usr/local/bin/bench worker
+2024-12-24 10:14:27,917 INFO /usr/local/bin/bench schedule
+2024-12-24 10:14:27,919 INFO /usr/local/bin/bench serve --port 8005
+2024-12-24 11:07:44,754 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-24 11:07:50,376 INFO /usr/local/bin/bench start
+2024-12-24 11:07:50,556 INFO /usr/local/bin/bench worker
+2024-12-24 11:07:50,561 INFO /usr/local/bin/bench serve --port 8005
+2024-12-24 11:07:50,585 INFO /usr/local/bin/bench watch
+2024-12-24 11:07:50,585 INFO /usr/local/bin/bench schedule
+2024-12-24 12:00:01,257 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-24 14:00:42,832 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-24 15:12:14,939 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-24 15:20:02,123 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-24 15:20:04,921 INFO /usr/local/bin/bench update
+2024-12-24 15:20:06,070 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-12-24 15:20:16,919 WARNING /usr/local/bin/bench update executed with exit code 1
+2024-12-24 15:24:01,473 INFO /usr/local/bin/bench --site library.test list-apps
+2024-12-24 15:35:40,002 INFO /usr/local/bin/bench --site library.test set-config developer_mode 1
+2024-12-24 15:35:44,791 INFO /usr/local/bin/bench start
+2024-12-24 15:35:44,964 INFO /usr/local/bin/bench serve --port 8005
+2024-12-24 15:35:44,964 INFO /usr/local/bin/bench schedule
+2024-12-24 15:35:44,966 INFO /usr/local/bin/bench watch
+2024-12-24 15:35:44,991 INFO /usr/local/bin/bench worker
+2024-12-24 16:00:12,309 INFO /usr/local/bin/bench --site library.test list-apps
+2024-12-24 16:56:44,587 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-26 10:11:44,383 INFO /usr/local/bin/bench start
+2024-12-26 10:11:44,528 INFO /usr/local/bin/bench schedule
+2024-12-26 10:11:44,532 INFO /usr/local/bin/bench worker
+2024-12-26 10:11:44,542 INFO /usr/local/bin/bench serve --port 8005
+2024-12-26 10:11:44,555 INFO /usr/local/bin/bench watch
+2024-12-26 12:00:01,276 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-26 14:54:49,460 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 14:57:18,625 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 15:13:42,607 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 15:17:15,013 INFO /usr/local/bin/bench --site library.test console
+2024-12-26 15:19:26,220 INFO /usr/local/bin/bench --site library.test add-to-hosts
+2024-12-26 15:19:37,553 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-26 15:19:47,152 INFO /usr/local/bin/bench --site library.test console
+2024-12-26 15:23:50,686 INFO /usr/local/bin/bench --site library.test reinstall
+2024-12-26 15:24:54,660 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-26 15:26:09,560 INFO /usr/local/bin/bench --site library.test set-admin-password admin
+2024-12-26 15:37:08,880 INFO /usr/local/bin/bench start
+2024-12-26 15:37:34,093 INFO /usr/local/bin/bench start
+2024-12-26 15:37:44,729 INFO /usr/local/bin/bench start
+2024-12-26 15:38:33,240 INFO /usr/local/bin/bench start
+2024-12-26 15:38:33,385 INFO /usr/local/bin/bench serve --port 8005
+2024-12-26 15:38:33,390 INFO /usr/local/bin/bench schedule
+2024-12-26 15:38:33,423 INFO /usr/local/bin/bench worker
+2024-12-26 15:38:33,423 INFO /usr/local/bin/bench watch
+2024-12-26 15:38:57,220 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-26 16:09:50,569 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:13:30,640 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:13:52,376 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:15:00,116 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:15:21,689 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:18:12,661 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-26 16:18:41,316 INFO /usr/local/bin/bench --site library.test migrate
+2024-12-27 09:52:36,366 INFO /usr/local/bin/bench start
+2024-12-27 09:52:36,512 INFO /usr/local/bin/bench watch
+2024-12-27 09:52:36,512 INFO /usr/local/bin/bench worker
+2024-12-27 09:52:36,544 INFO /usr/local/bin/bench schedule
+2024-12-27 09:52:36,553 INFO /usr/local/bin/bench serve --port 8005
+2024-12-27 11:30:20,141 INFO /usr/local/bin/bench start
+2024-12-27 11:30:20,286 INFO /usr/local/bin/bench schedule
+2024-12-27 11:30:20,287 INFO /usr/local/bin/bench serve --port 8005
+2024-12-27 11:30:20,328 INFO /usr/local/bin/bench watch
+2024-12-27 11:30:20,330 INFO /usr/local/bin/bench worker
+2024-12-27 12:00:01,252 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 11:14:57,152 INFO /usr/local/bin/bench start
+2024-12-30 11:14:57,300 INFO /usr/local/bin/bench worker
+2024-12-30 11:14:57,308 INFO /usr/local/bin/bench serve --port 8005
+2024-12-30 11:14:57,308 INFO /usr/local/bin/bench schedule
+2024-12-30 11:14:57,311 INFO /usr/local/bin/bench watch
+2024-12-30 12:00:02,080 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 13:03:01,324 INFO /usr/local/bin/bench start
+2024-12-30 13:03:17,985 INFO /usr/local/bin/bench start
+2024-12-30 13:29:08,192 INFO /usr/local/bin/bench start
+2024-12-30 13:29:46,024 INFO /usr/local/bin/bench stop
+2024-12-30 13:29:56,685 INFO /usr/local/bin/bench start
+2024-12-30 13:30:07,650 INFO /usr/local/bin/bench start
+2024-12-30 13:32:09,032 INFO /usr/local/bin/bench start
+2024-12-30 13:32:09,178 INFO /usr/local/bin/bench worker
+2024-12-30 13:32:09,187 INFO /usr/local/bin/bench schedule
+2024-12-30 13:32:09,202 INFO /usr/local/bin/bench serve --port 8005
+2024-12-30 13:32:09,203 INFO /usr/local/bin/bench watch
+2024-12-30 13:33:28,518 INFO /usr/local/bin/bench start
+2024-12-30 13:34:06,101 INFO /usr/local/bin/bench find .
+2024-12-30 13:34:28,574 INFO /usr/local/bin/bench new-app sales
+2024-12-30 13:34:28,577 LOG creating new app sales
+2024-12-30 13:34:53,972 LOG Installing sales
+2024-12-30 13:34:53,972 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/sales 
+2024-12-30 13:34:54,633 WARNING cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/sales  executed with exit code 2
+2024-12-30 13:34:54,633 WARNING /usr/local/bin/bench new-app sales executed with exit code 1
+2024-12-30 13:34:58,238 INFO /usr/local/bin/bench new-app sales
+2024-12-30 13:34:58,240 LOG creating new app sales
+2024-12-30 13:35:14,844 LOG Installing sales
+2024-12-30 13:35:14,845 DEBUG cd /home/sowmiya/bench-15 && /home/sowmiya/bench-15/env/bin/python -m pip install --quiet --upgrade -e /home/sowmiya/bench-15/apps/sales 
+2024-12-30 13:35:16,239 DEBUG bench build --app sales
+2024-12-30 13:35:16,310 INFO /usr/local/bin/bench build --app sales
+2024-12-30 13:35:20,185 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2024-12-30 13:35:22,505 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2024-12-30 13:35:22,505 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-30 13:35:59,081 INFO /usr/local/bin/bench neew-site sales.test
+2024-12-30 13:36:05,198 INFO /usr/local/bin/bench new-site sales.test
+2024-12-30 13:36:51,936 INFO /usr/local/bin/bench --site library.test add-to-hosts
+2024-12-30 13:37:18,490 INFO /usr/local/bin/bench --site sales.test install-app sales
+2024-12-30 13:37:36,159 INFO /usr/local/bin/bench --site library.test mariadb
+2024-12-30 13:37:53,609 INFO /usr/local/bin/bench start
+2024-12-30 13:39:20,738 INFO /usr/local/bin/bench start
+2024-12-30 13:39:20,885 INFO /usr/local/bin/bench watch
+2024-12-30 13:39:20,885 INFO /usr/local/bin/bench serve --port 8005
+2024-12-30 13:39:20,889 INFO /usr/local/bin/bench worker
+2024-12-30 13:39:20,903 INFO /usr/local/bin/bench schedule
+2024-12-30 13:41:08,697 INFO /usr/local/bin/bench --site sales.test install-app sales
+2024-12-30 13:44:15,552 INFO /usr/local/bin/bench --site sales.test add-to-hosts
+2024-12-30 13:45:53,088 INFO /usr/local/bin/bench --site sales.test add-to-hosts
+2024-12-30 14:54:08,075 INFO /usr/local/bin/bench start
+2024-12-30 14:54:08,208 INFO /usr/local/bin/bench serve --port 8005
+2024-12-30 14:54:08,240 INFO /usr/local/bin/bench worker
+2024-12-30 14:54:08,250 INFO /usr/local/bin/bench watch
+2024-12-30 14:54:08,255 INFO /usr/local/bin/bench schedule
+2024-12-31 10:45:07,375 INFO /usr/local/bin/bench start
+2024-12-31 10:45:07,529 INFO /usr/local/bin/bench worker
+2024-12-31 10:45:07,545 INFO /usr/local/bin/bench schedule
+2024-12-31 10:45:07,561 INFO /usr/local/bin/bench watch
+2024-12-31 10:45:07,567 INFO /usr/local/bin/bench serve --port 8005
+2024-12-31 12:00:01,451 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-31 16:10:26,763 INFO /usr/local/bin/bench start
+2024-12-31 16:10:26,923 INFO /usr/local/bin/bench worker
+2024-12-31 16:10:26,937 INFO /usr/local/bin/bench schedule
+2024-12-31 16:10:26,955 INFO /usr/local/bin/bench watch
+2024-12-31 16:10:26,963 INFO /usr/local/bin/bench serve --port 8005
+2024-12-31 16:25:39,207 INFO /usr/local/bin/bench migrate
+2024-12-31 16:25:55,958 INFO /usr/local/bin/bench --site sales.test migrate
+2025-01-02 10:05:39,739 INFO /usr/local/bin/bench start
+2025-01-02 10:05:39,894 INFO /usr/local/bin/bench worker
+2025-01-02 10:05:39,915 INFO /usr/local/bin/bench watch
+2025-01-02 10:05:39,938 INFO /usr/local/bin/bench schedule
+2025-01-02 10:05:39,938 INFO /usr/local/bin/bench serve --port 8005
+2025-01-02 10:14:13,455 INFO /usr/local/bin/bench clear-cache
+2025-01-02 10:14:13,733 INFO /usr/local/bin/bench clear-website-cache
+2025-01-02 10:14:14,010 INFO /usr/local/bin/bench restart
+2025-01-02 10:14:25,691 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2025-01-02 10:14:28,011 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2025-01-02 10:14:28,011 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-01-02 10:14:30,794 INFO /usr/local/bin/bench restart
+2025-01-02 10:14:31,024 DEBUG cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe:
+2025-01-02 10:14:32,242 WARNING cd /home/sowmiya/bench-15 && sudo supervisorctl restart frappe: executed with exit code 7
+2025-01-02 10:14:32,242 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-01-02 10:14:36,197 INFO /usr/local/bin/bench start
+2025-01-02 12:00:01,214 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-02 15:10:39,594 INFO /usr/local/bin/bench start
+2025-01-02 15:10:39,756 INFO /usr/local/bin/bench schedule
+2025-01-02 15:10:39,758 INFO /usr/local/bin/bench serve --port 8005
+2025-01-02 15:10:39,795 INFO /usr/local/bin/bench worker
+2025-01-02 15:10:39,805 INFO /usr/local/bin/bench watch
+2025-01-02 20:35:17,070 INFO /usr/local/bin/bench start
+2025-01-02 20:35:17,220 INFO /usr/local/bin/bench worker
+2025-01-02 20:35:17,225 INFO /usr/local/bin/bench watch
+2025-01-02 20:35:17,240 INFO /usr/local/bin/bench schedule
+2025-01-02 20:35:17,240 INFO /usr/local/bin/bench serve --port 8005
+2025-01-03 09:25:29,412 INFO /usr/local/bin/bench start
+2025-01-03 09:25:29,570 INFO /usr/local/bin/bench schedule
+2025-01-03 09:25:29,580 INFO /usr/local/bin/bench worker
+2025-01-03 09:25:29,611 INFO /usr/local/bin/bench serve --port 8005
+2025-01-03 09:25:29,617 INFO /usr/local/bin/bench watch

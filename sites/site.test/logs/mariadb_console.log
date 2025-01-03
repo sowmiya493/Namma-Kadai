@@ -1,0 +1,7 @@
+_HiStOrY_V2_
+Select\040*\040from\040tabCompany
+;
+INSERT\040INTO\040`tabCompany`\040(name,\040cash_balance)
+VALUES\040('Namma\040Kadai',\04015000);
+INSERT\040INTO\040`tabCompany`\040(name,\040cash_balance)\040VALUES\040('Namma\040Kadai',\04015000);
+Select\040*\040from\040tabCompany;

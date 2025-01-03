@@ -1,0 +1,176 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241216_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-16 12:00:02.167833
+Config  : ./library.test/private/backups/20241216_120001-library_test-site_config_backup.json 127.0B
+Database: ./library.test/private/backups/20241216_120001-library_test-database.sql.gz         322.9KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241214_101942-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241214_101942-site_test-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241216_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-16 12:00:02.454204
+Config  : ./site.test/private/backups/20241216_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241216_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241217_120002-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-17 12:00:02.493166
+Config  : ./library.test/private/backups/20241217_120002-library_test-site_config_backup.json 151.0B
+Database: ./library.test/private/backups/20241217_120002-library_test-database.sql.gz         349.9KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241216_120002-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241216_120002-site_test-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241217_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-17 12:00:02.774468
+Config  : ./site.test/private/backups/20241217_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241217_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241218_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-18 12:00:01.845689
+Config  : ./library.test/private/backups/20241218_120001-library_test-site_config_backup.json 151.0B
+Database: ./library.test/private/backups/20241218_120001-library_test-database.sql.gz         386.5KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241217_120002-site_test-site_config_backup.json is recent
+File ./site.test/private/backups/20241217_120002-site_test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241218_120001-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-18 12:00:02.166554
+Config  : ./site.test/private/backups/20241218_120001-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241218_120001-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241219_120002-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-19 12:00:02.735649
+Config  : ./library.test/private/backups/20241219_120002-library_test-site_config_backup.json 151.0B
+Database: ./library.test/private/backups/20241219_120002-library_test-database.sql.gz         405.5KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241218_120001-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241217_120002-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241217_120002-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241218_120001-site_test-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241219_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-19 12:00:03.009646
+Config  : ./site.test/private/backups/20241219_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241219_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241223_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-23 12:00:02.130173
+Config  : ./library.test/private/backups/20241223_120001-library_test-site_config_backup.json 151.0B
+Database: ./library.test/private/backups/20241223_120001-library_test-database.sql.gz         408.2KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241219_120002-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241219_120002-site_test-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241223_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-23 12:00:02.391084
+Config  : ./site.test/private/backups/20241223_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241223_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241224_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-24 12:00:01.772581
+Config  : ./library.test/private/backups/20241224_120001-library_test-site_config_backup.json 174.0B
+Database: ./library.test/private/backups/20241224_120001-library_test-database.sql.gz         420.1KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241223_120002-site_test-database.sql.gz is recent
+File ./site.test/private/backups/20241223_120002-site_test-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241224_120001-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-24 12:00:02.033456
+Config  : ./site.test/private/backups/20241224_120001-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241224_120001-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241226_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-26 12:00:01.984761
+Config  : ./library.test/private/backups/20241226_120001-library_test-site_config_backup.json 173.0B
+Database: ./library.test/private/backups/20241226_120001-library_test-database.sql.gz         445.0KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241224_120001-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241224_152016-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241224_120001-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241224_152016-site_test-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241226_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-26 12:00:02.490109
+Config  : ./site.test/private/backups/20241226_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241226_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241227_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-27 12:00:01.820407
+Config  : ./library.test/private/backups/20241227_120001-library_test-site_config_backup.json 173.0B
+Database: ./library.test/private/backups/20241227_120001-library_test-database.sql.gz         291.9KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241226_120002-site_test-database.sql.gz is recent
+File ./site.test/private/backups/20241226_120002-site_test-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241227_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-27 12:00:02.317111
+Config  : ./site.test/private/backups/20241227_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241227_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241230_120002-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-30 12:00:02.565489
+Config  : ./library.test/private/backups/20241230_120002-library_test-site_config_backup.json 173.0B
+Database: ./library.test/private/backups/20241230_120002-library_test-database.sql.gz         294.5KiB
+Backup for Site library.test has been successfully completed
+File ./site.test/private/backups/20241227_120002-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241226_120002-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241226_120002-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241227_120002-site_test-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241230_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-30 12:00:02.964555
+Config  : ./site.test/private/backups/20241230_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241230_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20241231_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-12-31 12:00:01.959238
+Config  : ./library.test/private/backups/20241231_120001-library_test-site_config_backup.json 173.0B
+Database: ./library.test/private/backups/20241231_120001-library_test-database.sql.gz         294.6KiB
+Backup for Site library.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_231caa73e76a3645 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _231caa73e76a3645 | /usr/bin/gzip >> ./sales.test/private/backups/20241231_120001-sales_test-database.sql.gz
+
+Backup Summary for sales.test at 2024-12-31 12:00:02.134145
+Config  : ./sales.test/private/backups/20241231_120001-sales_test-site_config_backup.json 94.0B
+Database: ./sales.test/private/backups/20241231_120001-sales_test-database.sql.gz         280.9KiB
+Backup for Site sales.test has been successfully completed
+File ./site.test/private/backups/20241230_120002-site_test-site_config_backup.json is recent
+File ./site.test/private/backups/20241230_120002-site_test-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20241231_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2024-12-31 12:00:02.561907
+Config  : ./site.test/private/backups/20241231_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20241231_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_fe566dfa66014253 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _fe566dfa66014253 | /usr/bin/gzip >> ./library.test/private/backups/20250102_120001-library_test-database.sql.gz
+
+Backup Summary for library.test at 2025-01-02 12:00:02.394414
+Config  : ./library.test/private/backups/20250102_120001-library_test-site_config_backup.json 173.0B
+Database: ./library.test/private/backups/20250102_120001-library_test-database.sql.gz         294.6KiB
+Backup for Site library.test has been successfully completed
+File ./sales.test/private/backups/20241231_120001-sales_test-site_config_backup.json is older than 24 hours
+File ./sales.test/private/backups/20241231_120001-sales_test-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_231caa73e76a3645 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _231caa73e76a3645 | /usr/bin/gzip >> ./sales.test/private/backups/20250102_120002-sales_test-database.sql.gz
+
+Backup Summary for sales.test at 2025-01-02 12:00:02.582513
+Config  : ./sales.test/private/backups/20250102_120002-sales_test-site_config_backup.json 94.0B
+Database: ./sales.test/private/backups/20250102_120002-sales_test-database.sql.gz         296.9KiB
+Backup for Site sales.test has been successfully completed
+File ./site.test/private/backups/20241230_120002-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241231_120002-site_test-site_config_backup.json is older than 24 hours
+File ./site.test/private/backups/20241231_120002-site_test-database.sql.gz is older than 24 hours
+File ./site.test/private/backups/20241230_120002-site_test-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3ed7a43db3c88571 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3ed7a43db3c88571 | /usr/bin/gzip >> ./site.test/private/backups/20250102_120002-site_test-database.sql.gz
+
+Backup Summary for site.test at 2025-01-02 12:00:02.927884
+Config  : ./site.test/private/backups/20250102_120002-site_test-site_config_backup.json 127.0B
+Database: ./site.test/private/backups/20250102_120002-site_test-database.sql.gz         285.4KiB
+Backup for Site site.test has been successfully completed
