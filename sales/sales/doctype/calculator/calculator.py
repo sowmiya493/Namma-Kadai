@@ -8,15 +8,14 @@ class calculator(Document):
     def validate(self):
         self.get_answer()
 
-    @frappe.whitelist()
     def get_answer(self):
         formula=self.formula
-        formula = self.formula.replace('2ab','2*a*b')  
+        # formula = self.formula.replace('ab','a*b')  
         #formula = self.formula.replace('ab','a*b')
         formula = formula.replace('a',str(self.field_a))
         formula = formula.replace('b',str(self.field_b))
-        self.ans = str(sympify(formula))
-        return self.ans
+        self.answer = str(sympify(formula))
+       
 
 
      
