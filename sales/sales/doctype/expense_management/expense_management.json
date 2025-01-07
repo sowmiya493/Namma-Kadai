@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "list",
+ "autoname": "hash",
  "creation": "2025-01-03 11:43:29.420186",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -16,11 +16,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-03 15:40:04.459092",
+ "modified": "2025-01-06 11:45:36.967212",
  "modified_by": "Administrator",
  "module": "Sales",
  "name": "Expense Management",
- "naming_rule": "By script",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {
