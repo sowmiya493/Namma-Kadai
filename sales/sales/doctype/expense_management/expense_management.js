@@ -45,9 +45,9 @@ frappe.ui.form.on("Expense Management", {
                 primary_action(data) {
                     if (data.date && data.expense_type && data.amount) {
                         frappe.call({
-                            method: "frappe.client.insert", 
+                            method: "sales.sales.doctype.expense_management.expense_management.expense_validate",
                             args: {
-                                doc: {
+                                self: {
                                     doctype: "Expense",
                                     date: data.date,
                                     expense_type: data.expense_type,
